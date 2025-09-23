@@ -1,33 +1,50 @@
-/* let score = "33abc"
+/* ----------------------
+   Type Conversion Examples
+---------------------- */
+/*
+let score = "33abc";
 console.log(typeof score);
 
 let valueInnumber = Number(score);
 console.log(typeof valueInnumber);
-console.log( valueInnumber); //NaN // JavaScript parses numbers from strings only when the entire string can be interpreted as a valid number.
-// In JavaScript, NaN is still considered a number (it’s a special numeric value representing “Not a Number”).
-let score2 = "34343"
-let newNumber = Number (score2);
-console.log (newNumber); // 34343 // Now it is parsed succesfully.
+console.log(valueInnumber); 
+// NaN: JavaScript parses numbers from strings only when the entire string can be interpreted as a valid number.
+// In JavaScript, NaN is still considered a number (special numeric value representing "Not a Number").
 
-//Conversion of null = 0;
-// Conversion of undefined = NaN;
-// 1=> Trure; 0=> False
-// ""=> False
-// "abc" => true
+let score2 = "34343";
+let newNumber = Number(score2);
+console.log(newNumber); 
+// 34343: Successfully parsed string to number
+
+// Conversion rules:
+// null   => 0
+// undefined => NaN
+// 1      => true, 0 => false
+// ""     => false
+// "abc"  => true
 */
-// ********************Operations***************************
 
-// let value = 69
-// let negValue = -value
-// // console.log(negValue);
+/* ----------------------
+   Operations Examples
+---------------------- */
+/*
+let value = 69;
+let negValue = -value;
+// console.log(negValue);
 
-// console.log("1"+2+2);
-// console.log(1+2 +"2");
+console.log("1"+2+2);  // "122"
+console.log(1+2+"2");  // "32"
+// Explanation:
+// If a string is at the first place, JS treats everything as a string.
+// If a number is at the first place, JS does the numeric operations first and then concatenates the string.
+*/
 
-// If string is at the first place, js treats everything as a string.
-// If number is at the first place, js will do the operation and then attach the string.
-
+/* ----------------------
+   Increment Operators
+---------------------- */
 let counter = 100;
-counter ++ //Postfix OP: Value increment after the usage
-++counter //Prefix OP: Value increment before the usage
-console.log(counter);
+
+counter++;   // Postfix OP: Value increment after usage
+++counter;   // Prefix OP: Value increment before usage
+
+console.log(counter); // 102
