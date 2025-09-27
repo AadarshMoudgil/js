@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "age": 25,
+      "email": "alice@example.com",
+      "hobbies": ["reading", "cycling"],
+      "address": { "city": "New York", "country": "USA" }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "age": 30,
+      "email": "bob@example.com",
+      "hobbies": ["gaming", "cooking"],
+      "address": { "city": "London", "country": "UK" }
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "age": 28,
+      "email": "charlie@example.com",
+      "hobbies": ["hiking", "chess", "swimming"],
+      "address": { "city": "Sydney", "country": "Australia" }
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "age": 22,
+      "email": "diana@example.com",
+      "hobbies": ["painting", "yoga"],
+      "address": { "city": "Toronto", "country": "Canada" }
+    },
+    {
+      "id": 5,
+      "name": "Ethan",
+      "age": 35,
+      "email": "ethan@example.com",
+      "hobbies": ["running", "photography"],
+      "address": { "city": "Berlin", "country": "Germany" }
+    }
+  ]
+}
