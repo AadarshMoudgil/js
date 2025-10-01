@@ -56,18 +56,56 @@ printObject({
 // Question 6: Create a function called printName that takes an object
 // with a property "name" and prints it.
 
+function printName (obj){
+console.log(obj.name);
+}
+printName({
+    "name": "fast",
+    "place": "everywhere"
+})
 
 // Question 7: Create a function called birthday that takes an object
 // with a property "age" and increases it by 1.
-
+function birthday (obj){
+console.log(obj.age +1);
+ 
+}
+birthday({
+    "age": 69
+});
 
 // Question 8: Create a function called getProperty that takes an object
 // and a property name (string) and returns the value of that property.
-
+function getProperty (obj, str){
+return obj[str];
+}
+console.log(getProperty({
+    "str": "I am the value", "age": 30
+}, "str"));
 
 // Question 9: Create a function called doubleArray that takes an array of numbers
 // and returns a new array with all numbers doubled.
 
+function doubleArray(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i] * 2);
+    }
+    return newArr;
+}
+console.log(doubleArray([2,4,7,8,10]));
+
 
 // Question 10: Create a function called mergeObjects that takes two objects
 // and returns a new object that contains all properties from both objects.
+function mergeObjects(obj1, obj2) {
+    return { ...obj1, ...obj2 };
+}
+
+console.log(mergeObjects({
+    "name": "Tatya Bichu",
+    "Hobby": "killing"
+}, {
+    "name2": "Shaktiman",
+    "Speciality": "Spinin"
+}));
